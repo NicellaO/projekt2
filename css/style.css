@@ -1,0 +1,51 @@
+#container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-column-gap: 10px;
+    grid-row-gap: 5 px;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'mn mn mn mn'
+    'ft ft ft ft'
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+grid-area: hd;
+background-color: #003049;
+height: 20vh;
+width: 100vw;
+
+}
+
+main {
+    grid-area: mn;
+    background-color: white;
+}
+
+#container2 {
+    display: grid;
+    height: 100vh;
+    grid-column-gap: 0;
+    grid-row-gap: 0 px;
+    grid-template-areas: 
+    'hdd hdd hdd hdd'
+    'mn mn mn mn'
+    'ft ft ft ft'
+}
+
+nav {
+grid-area: hdd;
+background-color:  #003049;
+}
+ #sokruta {
+     height: 40 vh;
+     width: 25 vw;
+ }
+
+
+
