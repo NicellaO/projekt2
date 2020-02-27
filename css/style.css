@@ -29,7 +29,7 @@ main {
 
 #container2 {
     display: grid;
-    height: 100vh;
+    height: 50vh;
     grid-column-gap: 0;
     grid-row-gap: 0 px;
     grid-template-areas: 
@@ -42,10 +42,96 @@ nav {
 grid-area: hdd;
 background-color:  #003049;
 }
- #sokruta {
-     height: 40 vh;
-     width: 25 vw;
+
+img {
+    max-width: 9%;
+    height: auto;
+    margin: 5px;
+    color: white;
+}
+
+.sokruta {
+     position: absolute;
+     top:15%;
+     right: 40%;
+     background: rgb(255, 255, 255);
+     height: 20px;
+     width: 350px;
+     border-radius: 40px;
+     padding: 10px;
  }
 
+ .sok-text {
+    border: none;
+    background: none;
+    outline: none;
+    padding: -5px;
+    float: left;
+    color:black;
+    font-size: 15px;
+    line-height: 15px;
+    width: 230px;
+    }
 
+#utforksa {
+    display: block;
+    border: black;
+    
+    background-color: #BF6C27;
+    outline: none;
+    padding: -5px;
+    float : left;
+    font-size: 30px;
+    line-height: 40px;
+    width: 200px;
+    border-radius: 40px;
+    text-align: center;
+    }
 
+#bibliotek {
+        border: none;
+        background-color: #C89E4E;
+        outline: none;
+        padding: -5px;
+        float : left;
+        font-size: 30px;
+        line-height: 40px;
+        width: 200px;
+        border-radius: 40px;
+        text-align: center;
+        }
+
+#kalender {
+            border: none;
+            background-color: #BFB99A;
+            outline: none;
+            padding: -5px;
+            float : left;
+            font-size: 30px;
+            line-height: 40px;
+            width: 200px;
+            border-radius: 40px;
+            text-align: center;
+            }
+
+#tips {
+            border: none;
+            background-color: rgb(255, 255, 255);
+            stroke: black;
+             outline: none;
+            padding: -5px;
+            float : left;
+            font-size: 30px;
+            line-height: 40px;
+            width: 200px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 5px 10px;
+            }
+
+    @media screen and (max-width: 1000px) {
+        body {
+    
+        }
+      }
+    
