@@ -22,6 +22,10 @@ width: 100vw;
 
 }
 
+h1 {
+    color: white;
+}
+
 main {
     grid-area: mn;
     background-color: white;
@@ -33,13 +37,13 @@ main {
     grid-column-gap: 0;
     grid-row-gap: 0 px;
     grid-template-areas: 
-    'hdd hdd hdd hdd'
+    'navv navv navv navv'
     'mn mn mn mn'
     'ft ft ft ft'
 }
 
 nav {
-grid-area: hdd;
+grid-area: navv;
 background-color:  #003049;
 }
 
@@ -51,14 +55,15 @@ img {
 }
 
 .sokruta {
-     position: absolute;
-     top:15%;
+     grid-area: navv;
+     top:10%;
      right: 40%;
      background: rgb(255, 255, 255);
      height: 20px;
      width: 350px;
      border-radius: 40px;
      padding: 10px;
+    
  }
 
  .sok-text {
@@ -66,72 +71,69 @@ img {
     background: none;
     outline: none;
     padding: -5px;
-    float: left;
     color:black;
-    font-size: 15px;
-    line-height: 15px;
-    width: 230px;
+    font-size: 2%;
+    line-height: 2vh;
+    width: 10vw;
+ 
     }
 
-#utforksa {
+#homebutton1 {
+    text-decoration: none;
+    color: black;
     display: block;
     border: black;
-    
     background-color: #BF6C27;
     outline: none;
     padding: -5px;
-    float : left;
-    font-size: 30px;
-    line-height: 40px;
-    width: 200px;
-    border-radius: 40px;
+    font-size: 10%;
+    line-height: 7vh;
+    width: 50vw;
+    border-radius: 4vh;
     text-align: center;
     }
 
-#bibliotek {
+#homebutton2 {
+        text-decoration: none;
+        color: black;
         border: none;
         background-color: #C89E4E;
         outline: none;
         padding: -5px;
-        float : left;
-        font-size: 30px;
-        line-height: 40px;
-        width: 200px;
-        border-radius: 40px;
+        font-size: 6%;
+        line-height: 7vh;
+        width: 50vw;
+        border-radius: 4vh;
         text-align: center;
         }
 
-#kalender {
+#homebutton3 {
+            text-decoration: none;
+            color: black;
             border: none;
             background-color: #BFB99A;
             outline: none;
             padding: -5px;
-            float : left;
-            font-size: 30px;
-            line-height: 40px;
-            width: 200px;
-            border-radius: 40px;
+            font-size: 6%;
+            line-height: 7vh;
+            width: 50vw;
+            border-radius: 4vh;
             text-align: center;
             }
 
-#tips {
+#homebutton4 {
+            text-decoration: none;
+            color: black;
             border: none;
             background-color: rgb(255, 255, 255);
-            stroke: black;
-             outline: none;
+            stroke: rgb(75, 75, 75);
+            outline: none;
             padding: -5px;
-            float : left;
-            font-size: 30px;
-            line-height: 40px;
-            width: 200px;
-            border-radius: 40px;
+            font-size: 6%;
+            line-height: 7vh;
+            width: 50vw;
+            border-radius: 4vh;
             text-align: center;
-            box-shadow: 5px 10px;
+            border-style: solid;
             }
-
-    @media screen and (max-width: 1000px) {
-        body {
-    
-        }
-      }
     
