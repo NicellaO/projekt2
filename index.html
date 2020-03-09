@@ -10,9 +10,64 @@
 <body>
 <div id="container">
 
-    <na>
+    <nav>
       <input id="sok-text" namn="" placeholder="Sök > boktitel, författare & genrer"> <a id="sokknapp" href="#"></a> 
-    </na>
+    
+      <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="img_woods_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="img_5terre_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img/krig.jpg" style="width:100%" onclick="currentSlide(1)" alt="Krig">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/hus.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hus">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/robin.jpg" style="width:100%" onclick="currentSlide(3)" alt="Robin hood">
+      </div>
+    </div>
+  </div>
+    
+    </nav>
    
     <main>
         <a id="homebutton1" href="Utforska.html"> <h5>Utforska</h5></a>
@@ -22,7 +77,7 @@
     </main>
     
     <footer>
-        <p id="info"> Information om oss</p> 
+        <p id="info"> Information</p> 
         <p id="skapa"> Skapa nytt</p>
         <p id="profil"> Min profil</p>
 
