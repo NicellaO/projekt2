@@ -1,7 +1,8 @@
-#container {
+* {
+  box-sizing: border-box;
+}
+  #container {
     display: grid;
-    height: 100vh;
-    width: auto;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
     grid-template-areas: 
@@ -13,95 +14,14 @@
 nav {
     grid-area: nav;
     background-color: #003049;
-    height: 20vh;
+    height: 17vh;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+h5 {
+  font-size: 3vh;
+  margin: 10px;
+  font-weight: lighter;
+}
 
 #sok-text {
     border: none;
@@ -123,6 +43,26 @@ nav {
     padding: 10px; 
     }
 
+    .slider {
+      width: 80vw;
+      height: 20vh;
+      display: flex;
+      overflow-x: auto;
+      background-color: rgb(247, 247, 247);
+      border-radius: 10px;
+      margin-left: 10%;
+    }
+    .slide {
+      width: 40vw;
+      flex-shrink: 0;
+      height: 1vh;
+      margin-left: 30%;
+    }
+
+    img {
+      height: 25vh;
+    }
+    
 main {
     grid-area: mn;
     background-color: white;
@@ -135,10 +75,10 @@ main {
     display: block;
     background-color: #BF6C27;
     outline: none;
-    padding: -5px;
     font-size: 10%;
     line-height: 7vh;
     width: 50vw;
+    height: 6vh;
     border-radius: 4vh;
     text-align: center;
     }
@@ -150,10 +90,10 @@ main {
     display: block;
     background-color: #C89E4E;
     outline: none;
-    padding: -5px;
     font-size: 10%;
     line-height: 7vh;
     width: 50vw;
+    height: 6vh;
     border-radius: 4vh;
     text-align: center;
     }
@@ -165,29 +105,35 @@ main {
     display: block;
     background-color: #BFB99A;
     outline: none;
-    padding: -5px;
     font-size: 10%;
     line-height: 7vh;
     width: 50vw;
+    height: 6vh;
     border-radius: 4vh;
     text-align: center;
     }
 
 #homebutton4 {
-    margin-left: 25%;
-    text-decoration: none;
-    color: black;
-    display: block;
-    background-color: rgb(255, 255, 255);
-    outline: none;
-    padding: -5px;
-    font-size: 10%;
-    line-height: 7vh;
-    width: 50vw;
-    border-radius: 4vh;
-    text-align: center;
-    border-width: thin;
-    border-style: solid;
+  margin-left: 25%;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  font-size: 10%;
+  line-height: 7vh;
+  width: 50vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  border-width: thin;
+  border-style: solid;
+}
+
+.linee {
+  width: 100vw;
+  border-color: rgb(0, 0, 0);
+  margin-top: 100px;
 }
 
 footer {
@@ -198,16 +144,22 @@ footer {
 
 #info{
     float: left;
+    color: black;
 }
 
 #skapa{
     float: left;
     margin-left: 35%;
+    color: black;
 }
 
 #profil {
     float: left;
     margin-left: 70%;
+    display: inline-block;
+    color: black;
 }
 
-
+@media only screen and (max-width 500px){
+  
+}

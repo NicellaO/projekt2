@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your storys</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="package/css/swiper.min.css">
 
 </head>
 <body>
@@ -12,73 +13,31 @@
 
     <nav>
       <input id="sok-text" namn="" placeholder="Sök > boktitel, författare & genrer"> <a id="sokknapp" href="#"></a> 
-    
-      <!-- Container for the image gallery -->
-<div class="container">
-
-    <!-- Full-width images with number text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-        <img src="img_woods_wide.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-        <img src="img_5terre_wide.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-        <img src="img_mountains_wide.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-        <img src="img_lights_wide.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-        <img src="img_nature_wide.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-        <img src="img_snow_wide.jpg" style="width:100%">
-    </div>
-  
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="img/krig.jpg" style="width:100%" onclick="currentSlide(1)" alt="Krig">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img/hus.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hus">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img/robin.jpg" style="width:100%" onclick="currentSlide(3)" alt="Robin hood">
-      </div>
-    </div>
-  </div>
-    
     </nav>
    
     <main>
-        <a id="homebutton1" href="Utforska.html"> <h5>Utforska</h5></a>
-        <a id="homebutton2" href="bibliotek.html"> <h5>Bibliotek</h5></a>
-        <a id="homebutton3" href="Kalender.html"> <h5>Kalender</h5></a>
-        <a id="homebutton4" href="Tips.html"> <h5>Tips till författaren</h5> </a>  
+<h4>Senast öppnat :</h4>
+
+<div class="slider">
+  <div class="slide"> <img src="img/hus.jpg" alt="hus"></div>
+  <div class="slide"> <img src="img/krig.jpg" alt="krig"> </div>
+  <div class="slide"> <img src="img/robin.jpg" alt="robin"> </div>
+  <div class="slide"></div>
+  <div class="slide"></div>
+</div>
+
+      <a id="homebutton1" href="Utfoska.html"> <h5>Utforska</h5></a>
+      <a id="homebutton2" href="bibliotek.html"> <h5>Bibliotek</h5></a>
+      <a id="homebutton3" href="Kalender.html"> <h5>Kalender</h5></a>
+      <a id="homebutton4" href="Tips.html"> <h5>Tips till författaren</h5> </a> 
+    
     </main>
     
+    <hr class="linee">
+
     <footer>
         <p id="info"> Information</p> 
-        <p id="skapa"> Skapa nytt</p>
+        <p id="skapa"> Nytt</p>
         <p id="profil"> Min profil</p>
 
     </footer>     
