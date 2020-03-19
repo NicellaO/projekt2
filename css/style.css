@@ -69,14 +69,12 @@ main {
 }
 
 #homebutton1 {
+    line-height: 7vh;
     margin-left: 25%;
     text-decoration: none;
     color: black;
     display: block;
     background-color: #BF6C27;
-    outline: none;
-    font-size: 10%;
-    line-height: 7vh;
     width: 50vw;
     height: 6vh;
     border-radius: 4vh;
@@ -84,14 +82,12 @@ main {
     }
 
 #homebutton2 {
+  line-height: 7vh;
     margin-left: 25%;
     text-decoration: none;
     color: black;
     display: block;
     background-color: #C89E4E;
-    outline: none;
-    font-size: 10%;
-    line-height: 7vh;
     width: 50vw;
     height: 6vh;
     border-radius: 4vh;
@@ -99,14 +95,12 @@ main {
     }
 
 #homebutton3 {
+    line-height: 7vh;
     margin-left: 25%;
     text-decoration: none;
     color: black;
     display: block;
     background-color: #BFB99A;
-    outline: none;
-    font-size: 10%;
-    line-height: 7vh;
     width: 50vw;
     height: 6vh;
     border-radius: 4vh;
@@ -114,52 +108,67 @@ main {
     }
 
 #homebutton4 {
-  margin-left: 25%;
-  text-decoration: none;
-  color: black;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  outline: none;
-  font-size: 10%;
-  line-height: 7vh;
-  width: 50vw;
-  height: 6vh;
-  border-radius: 4vh;
-  text-align: center;
-  border-width: thin;
-  border-style: solid;
+      line-height: 7vh;
+      margin-left: 25%;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      display: block;
+      background-color: rgb(216, 216, 216);
+      width: 50vw;
+      height: 6vh;
+      border-radius: 4vh;
+      text-align: center;
+      }
+
+#kalenderr {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background: #C89E4E;
 }
 
-.linee {
-  width: 100vw;
-  border-color: rgb(0, 0, 0);
-  margin-top: 100px;
+.kalender {
+  position: relative;
+  background: white ;
+  width: 800px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 10px solid #fff;
+  box-shadow: 0 15px 35 px rgba(0,0,0,.5);
 }
 
-footer {
-    grid-area: ft;
-    color: white;
-    justify-content: center;
+.kalender .datum {
+width: 400px;
+padding: 25px;
+box-sizing: border-box;
 }
 
-#info{
-    float: left;
-    color: black;
+.kalender .datum
+
+.kalender .bilder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background: #000;
 }
 
-#skapa{
-    float: left;
-    margin-left: 35%;
-    color: black;
+.kalender .bilder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-#profil {
-    float: left;
-    margin-left: 70%;
-    display: inline-block;
-    color: black;
-}
-
-@media only screen and (max-width 500px){
+@media only screen and (min-width 800px)
+{
   
 }
