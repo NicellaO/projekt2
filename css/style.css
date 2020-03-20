@@ -120,15 +120,6 @@ main {
       text-align: center;
       }
 
-#kalenderr {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  background: #C89E4E;
-}
 
 .kalender {
   position: relative;
@@ -148,7 +139,14 @@ padding: 25px;
 box-sizing: border-box;
 }
 
-.kalender .datum
+.kalender .datum h3 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;  
+
+}
 
 .kalender .bilder {
   position: absolute;
