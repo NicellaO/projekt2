@@ -1,172 +1,438 @@
 * {
   box-sizing: border-box;
 }
-  #container {
-    display: grid;
+/* Detta  nedanför är för startsidan*/
+#container {
+    display: block;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
     grid-template-areas: 
-    'nav nav nav nav'
-    'mn mn mn mn'
-    'ft ft ft ft'
+    'nav nav nav'
+    'mn mn mn'
+    'ft ft ft'
 }
 
 nav {
-    grid-area: nav;
-    background-color: #003049;
-    height: 17vh;
-}
-
-h5 {
-  font-size: 3vh;
-  margin: 10px;
-  font-weight: lighter;
+  grid-area: nav;
+  background-color: #003049;
+  height: 17vh;
 }
 
 #sok-text {
-    border: none;
-    background: none;
-    outline: none;
-    padding: -5px;
-    color:black;
-    font-size: 1em;
-    line-height: 5vh;
-    width: 70vw;
-    margin-left: 10%;
-    margin-left: 5%;
-    margin-top: 10%;
-    grid-area: navv;
-    background: #375468;
-    height: 3vh;
-    width: 80vw;
-    border-radius: 40px;
-    padding: 10px; 
-    }
+  grid-area: nav;
+  border: none;
+  border-radius: 50px;
+  padding: 3vh;
+  font-size: 1em;
+  width: 80vw;
+  margin-top: 4vh;
+  margin-left: 7vw;
+  height: auto;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  background: #375468;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .slider {
-      width: 80vw;
-      height: 20vh;
-      display: flex;
-      overflow-x: auto;
-      background-color: rgb(247, 247, 247);
-      border-radius: 10px;
-      margin-left: 10%;
-    }
-    .slide {
-      width: 40vw;
-      flex-shrink: 0;
-      height: 1vh;
-      margin-left: 30%;
-    }
-
-    img {
-      height: 25vh;
-    }
-    
-main {
-    grid-area: mn;
-    background-color: white;
+.slider {
+  grid-area: mn;
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  overflow-x: auto;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  margin-left: 10%;
 }
 
 #homebutton1 {
-    line-height: 7vh;
-    margin-left: 25%;
-    text-decoration: none;
-    color: black;
-    display: block;
-    background-color: #BF6C27;
-    width: 50vw;
-    height: 6vh;
-    border-radius: 4vh;
-    text-align: center;
-    }
+  grid-area: mn;
+  line-height: 7vh;
+  margin-left: 25%;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #BF6C27;
+  width: 50vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  }
 
 #homebutton2 {
-  line-height: 7vh;
-    margin-left: 25%;
-    text-decoration: none;
-    color: black;
-    display: block;
-    background-color: #C89E4E;
-    width: 50vw;
-    height: 6vh;
-    border-radius: 4vh;
-    text-align: center;
-    }
+  grid-area: mn;
+line-height: 7vh;
+  margin-left: 25%;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #C89E4E;
+  width: 50vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  }
 
 #homebutton3 {
+  grid-area: mn;
+  line-height: 7vh;
+  margin-left: 25%;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: #BFB99A;
+  width: 50vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+#homebutton4 {
+  grid-area: mn;
     line-height: 7vh;
     margin-left: 25%;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     display: block;
-    background-color: #BFB99A;
+    background-color: rgb(216, 216, 216);
     width: 50vw;
     height: 6vh;
     border-radius: 4vh;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     }
+    
+img{
+  height: 7vh;
+  grid-area: ft;
+  margin: 10%;
+  padding: 2vw;
+  text-align: center;
+}
 
-#homebutton4 {
-      line-height: 7vh;
-      margin-left: 25%;
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      display: block;
-      background-color: rgb(216, 216, 216);
-      width: 50vw;
-      height: 6vh;
-      border-radius: 4vh;
-      text-align: center;
-      }
-
-
-.kalender {
-  position: relative;
-  background: white ;
-  width: 800px;
-  height: 450px;
+.linje {
+  box-sizing: border-box;
+  grid-area: mn;
+  margin-top: 5vh;
+  width: 85vw;
+  height: 1px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 10px solid #fff;
-  box-shadow: 0 15px 35 px rgba(0,0,0,.5);
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-left: 10%;
 }
 
-.kalender .datum {
-width: 400px;
-padding: 25px;
-box-sizing: border-box;
+/* Detta  nedanför är för utforksa-sidan*/
+ #container2 {
+  display: block;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  grid-template-areas: 
+  'hd hd hd hd'
+  'navv navv navv'
+  'mnn mnn mnn mnn'
+ }
+
+ header {
+  grid-area: hd;
+  background-color: #BF6C27;
+  height: 17vh;
 }
 
-.kalender .datum h3 {
-  margin: 0 0 20px;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;  
+.forslag {
+  grid-area: mn;
+  width: 75vw;
+  height: 20vh;
+  display: flex;
+  overflow-x: auto;
+  background-color: rgb(255, 255, 255);
+  margin-left: 10%;
+  padding: 5vw;
 
 }
 
-.kalender .bilder {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 400px;
-  height: 100%;
-  background: #000;
+h1{
+  text-align: center;
 }
 
-.kalender .bilder img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.tillbaka {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  margin: 5%;
+  font-size: 2em;
 }
 
-@media only screen and (min-width 800px)
-{
+#nyheter {
+  position: relative;
+  grid-area: navv;
+  line-height: 7vh;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: rgb(222, 222, 222);
+  width: 25vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+#nyheter:hover {background-color: #bababa}
+
+#topl {
+  grid-area: navv;
+  position: relative;
+  line-height: 7vh;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: rgb(222, 222, 222);
+  width: 25vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+#topl:hover {background-color: #bababa}
+
+
+#dig {
+  position: relative;
+  grid-area: navv;
+  line-height: 7vh;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: rgb(222, 222, 222);
+  width: 25vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+#dig:hover {background-color: #bababa}
+
+#dagens{
+  position: relative;
+  grid-area: navv;
+  line-height: 7vh;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color:rgb(222, 222, 222);
+  width: 30vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+#dagens:hover {background-color: #bababa}
+
+#slump {
+  position: relative;
+  grid-area: navv;
+  line-height: 7vh;
+  text-decoration: none;
+  color: black;
+  display: block;
+  background-color: rgb(222, 222, 222);
+  width: 20vw;
+  height: 6vh;
+  border-radius: 4vh;
+  text-align: center;
+  box-shadow: 5px 5px 5px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+#slump:hover {background-color: #bababa}
+
+#ramm1 {
+  line-height: 3vh;
+  border-style: solid;
+  display: block;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 3vh;
+  border-radius: 15%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ramm1:hover {background-color: rgb(187, 187, 187)}
+
+#ramm2 {
+  line-height: 3vh;
+  border-style: solid;
+  display: block;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 3vh;
+  border-radius: 15%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ramm2:hover {background-color: rgb(92, 34, 34)}
+
+#ramm3 {
+  line-height: 3vh;
+  border-style: solid;
+  display: block;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 3vh;
+  border-radius: 15%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(181, 22, 120);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ramm3:hover {background-color: rgb(154, 56, 134)}
+
+#ramm4 {
+  line-height: 3vh;
+  border-style: solid;
+  display: block;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 3vh;
+  border-radius: 15%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 33, 96);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ramm4:hover {background-color: rgb(72, 69, 135)}
+
+#ramm5 {
+  line-height: 3vh;
+  border-style: solid;
+  display: block;
+  height: 25vh;
+  width: 25vw;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 3vh;
+  border-radius: 15%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(227, 166, 34);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#ramm5:hover {background-color: rgb(179, 174, 32)}
+
+/* Detta  nedanför är för mitt bibliotek-sidan*/
+
+#container3 {
+    display: block;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    'h h h h'
+    'mmn mmn mmn'
+}
+
+#biblan {
+  grid-area: h;
+  display: block;
+  background-color: #BFB99A;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#prem {
+  grid-area: mmn;
+  width: 75vw;
+  height: 20vh;
+  display: flex;
+  overflow-x: auto;
+  background-color: rgb(255, 255, 255);
+  margin-left: 10%;
+  padding: 5vw;
+}
+
+#bok1 {
+  display: block;
+  border: solid black;
+  height: 15vh;
+  width: 10vw;
+  margin: 15px;
+}
+
+#bok2 {
+  display: block;
+  border: solid black;
+  height: 15vh;
+  width: 10vw;
+  margin: 15px;
+}
+
+#bok3 {
+  display: block;
+  border: solid black;
+  height: 15vh;
+  width: 10vw;
+  margin: 15px;
+}
+
+#bok4 {
+  display: block;
+  border: solid black;
+  height: 15vh;
+  width: 10vw;
+  margin: 15px;
+}
+
+#bok5 {
+  display: block;
+  border: solid black;
+  height: 15vh;
+  width: 10vw;
+  margin: 15px;
+}
+
+#favoriter {
+  grid-area: mmn;
+  margin-top: 15px;
+  width: 75vw;
+  height: 20vh;
+  display: flex;
+  overflow-x: auto;
+  background-color: rgb(255, 255, 255);
+  margin-left: 10%;
+  padding: 5vw;
+}
+
+
+
+
+
   
-}
+    
+
+
+
+
+
+
+
