@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 /* Detta  nedanför är för startsidan*/
 #container {
@@ -16,6 +17,10 @@ nav {
   grid-area: nav;
   background-color: #003049;
   height: 17vh;
+}
+
+h4 {
+  margin: 1%;
 }
 
 #sok-text {
@@ -58,6 +63,8 @@ nav {
   border-radius: 4vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
   }
 
 #homebutton2 {
@@ -73,6 +80,7 @@ line-height: 7vh;
   border-radius: 4vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2vh;
   }
 
 #homebutton3 {
@@ -88,6 +96,7 @@ line-height: 7vh;
   border-radius: 4vh;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2vh;
   }
 
 #homebutton4 {
@@ -103,15 +112,18 @@ line-height: 7vh;
     border-radius: 4vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2vh;
     }
     
-img{
-  height: 7vh;
-  grid-area: ft;
+
+  .startbok {
+  height: 30vh;
+  width: 25vw;
+  grid-area: mn;
   margin: 10%;
-  padding: 2vw;
-  text-align: center;
+  padding: 5vw;
 }
+
 
 .linje {
   box-sizing: border-box;
