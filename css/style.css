@@ -117,7 +117,7 @@ line-height: 7vh;
     
 
   .startbok {
-  height: 30vh;
+  height: 27vh;
   width: 25vw;
   grid-area: mn;
   margin: 10%;
@@ -129,12 +129,18 @@ line-height: 7vh;
   box-sizing: border-box;
   grid-area: mn;
   margin-top: 5vh;
-  width: 85vw;
+  width: 80vw;
   height: 1px;
   display: flex;
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   margin-left: 10%;
+}
+
+.starticon {
+width: 10vw;
+margin-top: 5%;
+margin-left: 17%;
 }
 
 /* Detta  nedanför är för utforksa-sidan*/
@@ -152,6 +158,10 @@ line-height: 7vh;
   grid-area: hd;
   background-color: #BF6C27;
   height: 17vh;
+}
+
+.tillbaka {
+  font-size: 5em;
 }
 
 .forslag {
@@ -380,48 +390,28 @@ h1{
   overflow-x: auto;
   background-color: rgb(255, 255, 255);
   margin-left: 10%;
-  padding: 5vw;
+  padding: 3vw;
 }
 
-#bok1 {
+.bok1 {
   display: block;
   border: solid black;
-  height: 15vh;
-  width: 10vw;
+  height: 18vh;
+  width: 24vw;
   margin: 15px;
+  padding: 5px;
 }
 
-#bok2 {
-  display: block;
-  border: solid black;
+.books1 {
   height: 15vh;
-  width: 10vw;
-  margin: 15px;
 }
 
-#bok3 {
-  display: block;
-  border: solid black;
-  height: 15vh;
-  width: 10vw;
-  margin: 15px;
+.text_beskrivning {
+margin-left: 10%;
+margin-top: 2%;
+
 }
 
-#bok4 {
-  display: block;
-  border: solid black;
-  height: 15vh;
-  width: 10vw;
-  margin: 15px;
-}
-
-#bok5 {
-  display: block;
-  border: solid black;
-  height: 15vh;
-  width: 10vw;
-  margin: 15px;
-}
 
 #favoriter {
   grid-area: mmn;
@@ -436,14 +426,14 @@ h1{
 }
 
 #kalenderpil {
-  background:#ac9847;
+  background:#91c655;
   ;
 }
 
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #ac9847;
+  background: #91c655;
   text-align: center;
 }
 
@@ -472,7 +462,7 @@ h1{
 .weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color: #ddd;
+  background-color: rgb(255, 255, 255);
 }
 
 .weekdays li {
@@ -500,7 +490,8 @@ h1{
 
 .days li .active {
   padding: 5px;
-  background: #acac5b;
+  background: #91c655;
+  border-radius: 100%;
   color: white !important
 }
 
